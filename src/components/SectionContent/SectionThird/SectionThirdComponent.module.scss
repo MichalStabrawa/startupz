@@ -1,5 +1,7 @@
 @import "../../../style/main.scss";
 
+@import "../../../style/main.scss";
+
 .wrapper {
   padding: 147px 0 157px;
 
@@ -11,7 +13,7 @@
     text-align: right;
 
     @include media-query-lg {
-      padding-right: 144px;
+      padding-right: 138px;
     }
 
     .question_mark {
@@ -51,7 +53,7 @@
 
   .card {
     font-size: 30px;
-  
+    margin-right: 90px;
 
     &_last {
     }
@@ -88,3 +90,4 @@
     }
   }
 }
+

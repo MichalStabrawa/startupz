@@ -3,9 +3,10 @@
   padding: 30px 0 0;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  color: $color_typography;
+  
 
   font-size: 18px;
   font-style: normal;
@@ -19,17 +20,37 @@
 
   .list {
     list-style-type: none;
-    padding: 0;
+    padding: 20px 0 20px 0;
     margin: 0;
     display: none;
     align-items: center;
-
+    width: 100%;
+    border-top: 2px solid $color_white_grey;
+    border-bottom: 2px solid $color_white_grey;
+    &_active {
+      display: block;
+    }
     @include media-query-md {
       display: flex;
+      width: auto;
+      border: none;
     }
 
     li {
-      margin-left: 40px;
+      margin-bottom: 15px;
+
+      a {
+        text-decoration: none;
+        color: $color_typography;
+        &:hover {
+          color: $color_primary_orange;
+        }
+      }
+
+      @include media-query-md {
+        margin-left: 40px;
+        margin-bottom: 0;
+      }
     }
   }
 

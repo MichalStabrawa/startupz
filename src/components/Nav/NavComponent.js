@@ -26,8 +26,8 @@ const NavComponent = () => {
         <img src={Logo} alt="startupz logo"></img>
       </figure>
      <ButtonHamburger click={handleButtonBurger} active={flag?'active':''}/>
-      <ul className={classes.list}>
-        <li>Startups</li> <li>Content</li>{" "}
+      <ul className={`${classes.list} ${flag?classes.list_active:''}`}>
+        <li><a href="#">Startups</a></li> <li><a href="#">Content</a></li>{" "}
         <li>
           <ButtonComponent click={handleButton} text="Work with us!" >Primary</ButtonComponent>
         </li>
