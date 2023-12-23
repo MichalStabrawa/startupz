@@ -1,9 +1,9 @@
 import classes from './SectionComponent.module.scss';
 
 const SectionComponent =(props)=> {
- 
+ const {css}=props;
     return(
-        <section className={`${classes.section} ${props.css='grey'?classes.gray:''}`}>{props.children}</section>
+        <section className={`${classes.section} ${classes[css]}`}>{props.children}</section>
     )
 }
 

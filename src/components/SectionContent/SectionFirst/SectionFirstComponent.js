@@ -4,23 +4,63 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import img from "../../../assets/question.svg";
+
 const SectionFirstComponent = () => {
   return (
     <SectionComponent css="grey">
-      <Container fluid>
-        <Row>
-          <Col>
-            <div className={classes.wrapper}>
-              <h2 className={classes.title}>Who we are</h2>
-              <p className={classes.description}>
-                We create products that have innovation and technology at their
-                core. We value working with talented people that understand the
-                possibilities of today.
-              </p>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <div className={classes.wrapper}>
+        <Container fluid>
+          <Row>
+            <Col xs={8}>
+              <div className={classes.wrapper_item}>
+                <div>
+                  <h2 className={classes.title}>Who we are</h2>{" "}
+                  <p className={classes.description}>
+                    We create products that have innovation and technology at
+                    their core.
+                    <br /> We value working with talented people that understand
+                    the possibilities of today.
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col xs={4}>
+              {" "}
+              <figure>
+                <img src={img} />
+              </figure>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <div className={classes.card}>
+                <p className={classes.card_title}>01</p>
+                <p className={classes.card_description}>
+                  We develop innovative products, systems and services
+                </p>
+              </div>
+            </Col>
+            <Col>
+              <div className={classes.card}>
+                <p className={classes.card_title}>01</p>
+                <p className={classes.card_description}>
+                  Next we build teams to scale them into companies
+                </p>
+              </div>
+            </Col>
+            <Col>
+              <div className={`${classes.card} ${classes.card_last}`}>
+                <p className={classes.card_title}>01</p>
+                <p className={classes.card_description}>
+                  Each startup solving
+                  one problem at a time
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </SectionComponent>
   );
 };

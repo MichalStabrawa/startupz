@@ -1,3 +1,77 @@
-.section_wrapper {
-    
+@import "../../../style/main.scss";
+
+.wrapper {
+  padding: 147px 0 157px 108px;
+  padding-left: 108px;
+
+  figure {
+    padding-right: 147px;
+    text-align: right;
+  }
+  &_item {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      color: #3d4f5c;
+
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50px; /* 100% */
+      letter-spacing: -1px;
+      margin-bottom: 32px;
+    }
+
+    .description {
+      color: $color_primary_orange;
+
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 125% */
+      letter-spacing: -0.24px;
+      margin-bottom: 79px;
+    }
+  }
+
+  .card {
+    font-size: 30px;
+    margin-right: 90px;
+
+    &_last {
+   
+    }
+
+    &_title {
+      color: $color_primary_orange;
+      position: relative;
+      padding-bottom: 19px;
+      margin-bottom: 26px;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px; /* 100% */
+      letter-spacing: -0.3px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 50px;
+        height: 2px;
+        background-color: $color_typography;
+        bottom: 0;
+      }
+    }
+
+    &_description {
+      color: #3d4f5c;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 38px; /* 126.667% */
+      letter-spacing: -0.3px;
+    }
+  }
 }
