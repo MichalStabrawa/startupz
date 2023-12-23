@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import NavComponent from './components/Nav/NavComponent';
+import HeaderComponent from './components/Header/HeaderComponent';
 
 function App() {
   return (
     <div className="App">
-      <NavComponent/>
+   <HeaderComponent/>
  
     </div>
   );
