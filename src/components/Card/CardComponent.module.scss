@@ -1,0 +1,57 @@
+@import "../../style/main.scss";
+
+.card {
+  max-width: 583.141px;
+  min-height: 380.324px;
+  border-radius: 30px;
+  background: #fff;
+  padding: 45px 0 50px;
+  box-shadow: 0px 8px 35px 0px rgba(187, 169, 142, 0.15);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 93.75% */
+    letter-spacing: -0.32px;
+    margin-bottom: 25px;
+  
+  }
+
+  .description {
+    color: $color_typography;
+    max-width:  417px;;
+
+    text-align: center;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.16px;
+  }
+  .green {
+    color: $color_green;
+  }
+
+  .grey {
+    color: $color_blue_grey;
+  }
+
+  .sea {
+    color: $color_sea_blue;
+  }
+
+  .violet {
+    color: $color_violet;
+  }
+
+  .btn_wrapper {
+    margin-top:20px;
+  }
+}

@@ -29,7 +29,7 @@ const SectionSecondComponent = () => {
   return (
     <SectionComponent>
       <div className={classes.section_second}>
-        <Container>
+        <Container fluid>
           <Row>
             <Col>
               <div className={classes.section_second_wrapper}>
