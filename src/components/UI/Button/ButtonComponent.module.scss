@@ -1,0 +1,21 @@
+@import '../../../style/main.scss';
+
+.button {
+    min-height: 45px;
+    border-radius: 32.5px;
+    border: 1px solid $color_complementary_green;
+    background-color: transparent;
+    color:#46B8C8;
+    padding: 0 20px;
+
+    &:hover {
+        background-color:$color_complementary_green;
+        color:#fff;
+        transition: 0.25s;
+    }
+
+    &.full {
+        background-color: $color_complementary_green;
+        color:$color_white;
+    }
+}
