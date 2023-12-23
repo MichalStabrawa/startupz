@@ -5,6 +5,10 @@ import ButtonComponent from "../UI/Button/ButtonComponent";
 
 
 const NavComponent = () => {
+
+  const handleButton =()=> {
+    alert('Do something')
+  }
   return (
     <nav className={classes.nav}>
       <figure className={classes.logo_wrapper}>
@@ -13,7 +17,7 @@ const NavComponent = () => {
       <ul className={classes.list}>
         <li>Startups</li> <li>Content</li>{" "}
         <li>
-          <ButtonComponent text="Work with us!" >Primary</ButtonComponent>
+          <ButtonComponent click={handleButton} text="Work with us!" >Primary</ButtonComponent>
         </li>
       </ul>
     </nav>
