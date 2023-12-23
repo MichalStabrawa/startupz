@@ -1,12 +1,26 @@
 @import "../../../style/main.scss";
 
 .wrapper {
-  padding: 147px 0 157px 108px;
-  padding-left: 108px;
+  padding: 147px 0 157px;
+
+  @include media-query-xl {
+    padding: 147px 0 157px 108px;
+  }
 
   figure {
-    padding-right: 147px;
     text-align: right;
+
+    @include media-query-lg {
+      padding-right: 147px;
+    }
+
+    .question_mark {
+      max-width: 100%;
+
+      @include media-query-md {
+        max-width:initial;
+      }
+    }
   }
   &_item {
     display: flex;
@@ -40,7 +54,6 @@
     margin-right: 90px;
 
     &_last {
-   
     }
 
     &_title {

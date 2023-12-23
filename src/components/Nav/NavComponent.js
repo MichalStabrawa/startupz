@@ -1,14 +1,23 @@
+import { useState } from "react";
+
 import classes from "./NavComponent.module.scss";
 
 import Logo from "../../assets/logo.svg";
 import ButtonComponent from "../UI/Button/ButtonComponent";
+import ButtonHamburger from "../UI/Button/ButtonHamburger/ButtonHamburger";
 
 
 
 const NavComponent = () => {
+  const [flag,setFlag] = useState(false)
 
   const handleButton =()=> {
     alert('Do something')
+  }
+
+  const handleButtonBurger = () => {
+    setFlag(!flag)
+    console.log(flag)
   }
   return (
     <nav className={classes.nav}>
@@ -16,7 +25,7 @@ const NavComponent = () => {
       <figure className={classes.logo_wrapper}>
         <img src={Logo} alt="startupz logo"></img>
       </figure>
-      <button className={classes.btn_hamburger}>Menu</button>
+     <ButtonHamburger click={handleButtonBurger} active={flag?'active':''}/>
       <ul className={classes.list}>
         <li>Startups</li> <li>Content</li>{" "}
         <li>

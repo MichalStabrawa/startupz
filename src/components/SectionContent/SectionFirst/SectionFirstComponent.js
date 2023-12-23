@@ -12,7 +12,7 @@ const SectionFirstComponent = () => {
       <div className={classes.wrapper}>
         <Container fluid>
           <Row>
-            <Col xs={8}>
+            <Col xs={10} LG={8}>
               <div className={classes.wrapper_item}>
                 <div>
                   <h2 className={classes.title}>Who we are</h2>{" "}
@@ -25,10 +25,10 @@ const SectionFirstComponent = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={4}>
+            <Col xs={2} LG={4}>
               {" "}
               <figure>
-                <img src={img} />
+                <img src={img}  className={classes.question_mark}/>
               </figure>
             </Col>
           </Row>
