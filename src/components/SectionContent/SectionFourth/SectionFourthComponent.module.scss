@@ -1,0 +1,33 @@
+@import "../../../style/main.scss";
+
+.wrapper {
+  padding: 140px 0  ;
+
+  @include media-query-xl {
+    padding: 140px  108px;
+  }
+
+  .title {
+    color: $color_typography;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 100% */
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+
+  
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+
+    @include media-query-lg {
+        grid-template-columns: 1fr 1fr;
+    }
+
+  }
+}

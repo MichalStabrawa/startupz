@@ -1,0 +1,1 @@
+.wrapper{padding:140px 0}@media(min-width: 1200px){.wrapper{padding:140px 108px}}.wrapper .title{color:#3d4f5c;text-align:center;font-size:50px;font-style:normal;font-weight:700;line-height:50px;letter-spacing:-1px;margin-bottom:32px}.wrapper .content{display:grid;grid-template-columns:1fr;gap:25px}@media(min-width: 992px){.wrapper .content{grid-template-columns:1fr 1fr}}
