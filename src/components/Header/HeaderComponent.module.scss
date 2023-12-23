@@ -6,9 +6,19 @@
   background-image: url("../../assets/background.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 80%;
   overflow: hidden;
-  padding: 0 120px;
+  padding: 0 15px;
+
+
+
+ @include media-query-md {
+  background-size:auto
+ }
+
+  @include media-query-xl {
+    padding: 0 120px;
+  }
 
   &_wrapper {
     margin-top: 145px;
@@ -18,12 +28,16 @@
     width: 407px;
     color: #3d4f5c;
 
-    font-size: 85px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 700;
     line-height: 85px; /* 100% */
     letter-spacing: -1.7px;
-    margin-bottom:25px
+    margin-bottom: 25px;
+
+    @include media-query-sm {
+  font-size:85px;
+    }
   }
 
   &_description {
@@ -33,6 +47,6 @@
     font-weight: 400;
     line-height: 30px; /* 125% */
     letter-spacing: -0.24px;
-    margin-bottom:25px
+    margin-bottom: 25px;
   }
 }

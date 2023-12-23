@@ -1,0 +1,13 @@
+@import '../../../style/main.scss';
+
+.section {
+background-color: $color_white;
+color:red;
+    &.grey {
+        background-color: $color_white_grey;
+    }
+}
+
+.container {
+    height: 100%;;
+}
