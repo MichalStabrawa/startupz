@@ -4,6 +4,7 @@ import Logo from "../../assets/logo.svg";
 import ButtonComponent from "../UI/Button/ButtonComponent";
 
 
+
 const NavComponent = () => {
 
   const handleButton =()=> {
@@ -11,9 +12,11 @@ const NavComponent = () => {
   }
   return (
     <nav className={classes.nav}>
+      
       <figure className={classes.logo_wrapper}>
         <img src={Logo} alt="startupz logo"></img>
       </figure>
+      <button className={classes.btn_hamburger}>Menu</button>
       <ul className={classes.list}>
         <li>Startups</li> <li>Content</li>{" "}
         <li>
