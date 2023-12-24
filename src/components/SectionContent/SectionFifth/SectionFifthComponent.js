@@ -6,6 +6,10 @@ import Col from "react-bootstrap/Col";
 import ButtonComponent from "../../UI/Button/ButtonComponent";
 
 const SectionFifthComponent = () => {
+
+    const handleButtonClick =()=> {
+        alert('Do something !!!!!')
+    }
   return (
     <SectionComponent css="grey">
       <div className={classes.main_wrapper}>
@@ -18,7 +22,7 @@ const SectionFifthComponent = () => {
                   We're always looking for talented people to join and help
                   build our startups. Check out our current openings
                 </p>
-                <ButtonComponent css="full" text="See current openings" />
+                <ButtonComponent click={handleButtonClick} css="full" text="See current openings" />
               </div>
             </Col>
           </Row>
