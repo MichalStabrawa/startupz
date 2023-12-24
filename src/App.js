@@ -7,7 +7,7 @@ import SectionThirdComponent from "./components/SectionContent/SectionThird/Sect
 import SectionFourthComponent from "./components/SectionContent/SectionFourth/SectionFourthComponent"
 import SectionFifthComponent from "./components/SectionContent/SectionFifth/SectionFifthComponent";
 import SectionFormComponent from "./components/SectionContent/SectionForm/SectionFormComponent";
-
+import FooterComponent from "./components/Footer/FooterComponent/FooterComponent";
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
       <SectionFourthComponent/>
       <SectionFifthComponent/>
       <SectionFormComponent/>
+      <FooterComponent/>
     </div>
   );
 }
