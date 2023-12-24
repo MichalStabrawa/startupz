@@ -5,6 +5,8 @@ import SectionFirstComponent from "./components/SectionContent/SectionFirst/Sect
 import SectionSecondComponent from "./components/SectionContent/SectionSecond/SectionSecondComponent";
 import SectionThirdComponent from "./components/SectionContent/SectionThird/SectionThirdComponent";
 import SectionFourthComponent from "./components/SectionContent/SectionFourth/SectionFourthComponent"
+import SectionFifthComponent from "./components/SectionContent/SectionFifth/SectionFifthComponent";
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <SectionSecondComponent/>
       <SectionThirdComponent/>
       <SectionFourthComponent/>
+      <SectionFifthComponent/>
     </div>
   );
 }

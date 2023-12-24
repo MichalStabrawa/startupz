@@ -1,0 +1,47 @@
+@import "../../../style/main.scss";
+
+.main_wrapper {
+  padding: 140px 0;
+  background-image: url("../../../assets/backright.svg"),
+    url("../../../assets/backleft.svg");
+  background-position: right bottom, left top;
+  background-size: 30%;
+  background-repeat: no-repeat, no-repeat;
+  min-height: 550px;
+
+  @include media-query-md {
+    background-size: auto;
+    background-position: right center, left center;
+  }
+
+  .content {
+    margin: 0 auto;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title {
+    color: $color_typography;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; /* 100% */
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    color: $color_primary_orange;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+    letter-spacing: -0.24px;
+    margin-bottom: 30px;
+  }
+}
