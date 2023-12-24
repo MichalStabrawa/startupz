@@ -27,7 +27,7 @@ const NavComponent = () => {
       </figure>
      <ButtonHamburger click={handleButtonBurger} active={flag?'active':''}/>
       <ul className={`${classes.list} ${flag?classes.list_active:''}`}>
-        <li><a href="#">Startups</a></li> <li><a href="#">Content</a></li>{" "}
+        <li><a href="#first">Startups</a></li> <li><a href="#first">Content</a></li>{" "}
         <li>
           <ButtonComponent click={handleButton} text="Work with us!" >Primary</ButtonComponent>
         </li>

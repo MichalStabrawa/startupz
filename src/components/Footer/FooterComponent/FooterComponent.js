@@ -29,22 +29,22 @@ const FooterComponent = () => {
             <div className={classes.footer_item}>
               <p className={classes.title}>Companies</p>
               <p>
-                <a href="#" className={classes.link}>
+                <a href="#Tolq" className={classes.link}>
                   Tolq
                 </a>
               </p>
               <p>
-                <a href="#" className={classes.link}>
+                <a href="#LegalSite" className={classes.link}>
                   LegalSite
                 </a>
               </p>
               <p>
-                <a href="#" className={classes.link}>
+                <a href="#Codekeeper" className={classes.link}>
                   Codekeeper
                 </a>
               </p>
               <p>
-                <a href="#" className={classes.link}>
+                <a href="#Feedback Labs" className={classes.link}>
                   Feedback Labs
                 </a>
               </p>

@@ -56,7 +56,7 @@ const SectionFourthComponent = () => {
           </Row>
           <Row>
             <Col>
-              <div className={classes.content}>
+              <div className={classes.content} >
                 {text.map((el, index) => (
                   <CardComponent
                     key={index}
@@ -64,6 +64,7 @@ const SectionFourthComponent = () => {
                     src={el.img}
                     text={el.description}
                     css={el.css}
+                    id={el.title}
                   />
                 ))}
               </div>

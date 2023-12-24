@@ -9,7 +9,7 @@ import img from "../../../assets/question.svg";
 const SectionFirstComponent = () => {
   return (
     <SectionComponent css="grey">
-      <div className={classes.wrapper}>
+      <div className={classes.wrapper} id="first">
         <Container fluid>
           <Row>
             <Col xs={10} lg={8}>

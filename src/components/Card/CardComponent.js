@@ -1,13 +1,13 @@
 import classes from "./CardComponent.module.scss";
 import ButtonComponent from "../UI/Button/ButtonComponent";
 
-const CardComponent = ({ title, css, text, src }) => {
+const CardComponent = ({ title, css, text, src,id }) => {
   const handleButton = () => {
     alert("Action more...........................");
   };
 
   return (
-    <div className={classes.card}>
+    <div className={classes.card} id={id}>
       <h2 className={`${classes.title} ${classes[css]}`}>{title}</h2>
       <p className={classes.description}>{text}</p>
       <img src={src} alt={title} />
