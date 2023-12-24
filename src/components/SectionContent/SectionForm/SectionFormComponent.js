@@ -16,7 +16,7 @@ const SectionFormComponent =()=> {
             <Container>
                 <Row>
                     <Col lg={12}>
-                    <div className={classes.form_main}>
+                    <div className={classes.form_main} id="form">
                         <h2 className={classes.title}>Are you ready to board this rocket ship?</h2>
                         <p className={classes.description}>Share your excitement with us.</p>
                         <form>
