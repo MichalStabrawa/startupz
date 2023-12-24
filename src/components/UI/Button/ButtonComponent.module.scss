@@ -29,4 +29,11 @@
       transition: 0.25s;
     }
   }
+
+  &.submit {
+    border-radius: 32.5px;
+    border: 1px solid #3d4f5c;
+    color: $color_white;
+    background: #3d4f5c;
+  }
 }

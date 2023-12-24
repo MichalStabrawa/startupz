@@ -6,6 +6,7 @@ import SectionSecondComponent from "./components/SectionContent/SectionSecond/Se
 import SectionThirdComponent from "./components/SectionContent/SectionThird/SectionThirdComponent";
 import SectionFourthComponent from "./components/SectionContent/SectionFourth/SectionFourthComponent"
 import SectionFifthComponent from "./components/SectionContent/SectionFifth/SectionFifthComponent";
+import SectionFormComponent from "./components/SectionContent/SectionForm/SectionFormComponent";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <SectionThirdComponent/>
       <SectionFourthComponent/>
       <SectionFifthComponent/>
+      <SectionFormComponent/>
     </div>
   );
 }

@@ -4,7 +4,7 @@ const ButtonComponent = ({ css, text,click }) => {
   console.log(`type ${typeof css}`);
   return (
     <button onClick={click}
-      className={`${classes.button} ${(css === "full" ? classes.full : "")}`}
+      className={`${classes.button} ${ classes[css]}`}
     >
       {text}
     </button>
