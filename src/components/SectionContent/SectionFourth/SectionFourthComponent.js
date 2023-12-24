@@ -4,8 +4,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import imgLeft from "../../../assets/Thumb.svg";
+import imgRight from "../../../assets/Thumb2.svg";
 import img1 from "../../../assets/clay-macbook-pro-15-with-touch-bar-front-view-mockup 1.png";
-
 import img2 from "../../../assets/Frame12.svg";
 import img3 from "../../../assets/Frame14.svg";
 import img4 from "../../../assets/clay-macbook-pro-15-with-touch-bar-front-view-mockup 3.png";
@@ -65,6 +66,24 @@ const SectionFourthComponent = () => {
                     css={el.css}
                   />
                 ))}
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              {" "}
+              <div className={classes.section_second_wrapper}>
+                <figure>
+                  <img src={imgLeft} alt="img" />
+                </figure>
+                <h2 className={classes.section_second_title}>
+                  Startups create a world that actually is better. Any problem
+                  that can be solved, will be solved by a startup, and that is a
+                  huge opportunity.
+                </h2>
+                <figure>
+                  <img src={imgRight} alt="img" />
+                </figure>
               </div>
             </Col>
           </Row>
