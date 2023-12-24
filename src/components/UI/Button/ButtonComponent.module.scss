@@ -22,5 +22,11 @@
   &.full {
     background-color: $color_complementary_green;
     color: $color_white;
+
+    &:hover {
+      background-color: transparent;
+      color: $color_complementary_green;
+      transition: 0.25s;
+    }
   }
 }
